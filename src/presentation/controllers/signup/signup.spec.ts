@@ -1,8 +1,7 @@
+/* eslint-disable max-lines-per-function */
 import { SignUpController } from './signup';
-import { InvalidParamError, MissingParamError, ServerError } from '../errors';
-import { EmailValidator, Controller, HttpRequest } from '../protocols';
-import { AccountModel } from '../../domain/models/account';
-import { AddAccount, AddAccountModel } from '../../domain/usecases/add-account';
+import { InvalidParamError, MissingParamError, ServerError } from '../../errors';
+import { EmailValidator, AccountModel, AddAccount, AddAccountModel } from './signup-protocols';
 
 interface SutTyes {
     sut: SignUpController;

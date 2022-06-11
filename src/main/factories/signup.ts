@@ -1,5 +1,5 @@
-import { DbAddAccount } from '@/data/usecases/add-account/db-add-account';
-import { EmailValidatorAdapter } from '@/utils/email-validator-adapter';
+import { DbAddAccount } from '../../data/usecases/add-account/db-add-account';
+import { EmailValidatorAdapter } from '../../utils/email-validator-adapter';
 import { SignUpController } from '../../presentation/controllers/signup';
 import { BcryptAdapter } from '../../infra/criptography/bcrypt-adapter';
 import { AccountMongoRepository } from '../../infra/db/mongodb/account-repository';
